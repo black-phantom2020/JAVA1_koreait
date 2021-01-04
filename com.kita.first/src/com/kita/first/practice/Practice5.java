@@ -16,11 +16,12 @@ public class Practice5 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("수학 응시 유형을 입력해 주세요: (가/나)");
 		String mathType = sc.next();
-		System.out.println("점수를 입력해 주세요: ");
-		int score = sc.nextInt();
+		
 		int defaultScore = 70;
-		sc.close();
+		
 		if("가".equals(mathType) || "나".equals(mathType)) {
+			System.out.println("점수를 입력해 주세요: ");
+			int score = sc.nextInt();
 			if("가".equals(mathType)) {
 				defaultScore = 60;
 			}
@@ -35,9 +36,19 @@ public class Practice5 {
 			System.out.println("잘못 입력하셨습니다.");
 		}
 		
+		sc.close();
 		
-		
-
+//		if("가".equals(mathType)) {
+//		if(score > 60) {
+//			System.out.println("평균 이상입니다.");
+//		} else if(score < 60) {
+//			System.out.println("평균 이하입니다.");
+//		} else {
+//			System.out.println("평균입니다.");
+//		}
+//	} else if("나".equals(mathType)) {
+//		
+//	}
 		
 		
 		
