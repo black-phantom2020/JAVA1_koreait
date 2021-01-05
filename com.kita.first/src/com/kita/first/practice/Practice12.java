@@ -8,10 +8,16 @@ public class Practice12 {
 		// *
 		// *
 		
-		int star = 3;
+		int star = 5;
 		
-		for() {
-			
+		for(int i=1; i<=star; i++) {
+			System.out.print("*");
+		}
+		
+		System.out.println();
+		
+		for(int i=1; i<=star; i++) {
+			System.out.println("*");
 		}
 	}
 }
