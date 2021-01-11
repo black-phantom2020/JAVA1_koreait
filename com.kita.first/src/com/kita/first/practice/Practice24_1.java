@@ -16,7 +16,7 @@ public class Practice24_1 {
 			}
 		}
 		
-		/*
+
 		for(int i=1; i<arr.length; i++) {
 			for(int z=0; z<arr.length-i; z++) {
 				if(arr[z]>arr[z+1]) {
@@ -26,7 +26,7 @@ public class Practice24_1 {
 				}
 			}
 		}
-		*/
+
 		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 		for(int val : arr) {
 			System.out.print(val + ", ");
