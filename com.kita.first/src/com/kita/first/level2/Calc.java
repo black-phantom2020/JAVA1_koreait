@@ -29,12 +29,16 @@ public class Calc {
 	
 	public int sum(int n1, int n2) {
 		int result = n1 + n2;
-		
 		return result;
 	}
 	
 	int minus(int n1, int n2) {
-		int result = n1 - n2;
+		int result;
+		if(n1 < n2) {
+			result = n2 - n1;
+		} else {
+			result = n1 - n2;			
+		}
 		return result;
 	}
 	
