@@ -1,24 +1,31 @@
 package com.kita.first.level2;
 
-public class Phone {
+public class Phone extends Object {
 	// 필드
-	String company = "삼성";
+	String company;
 	String name;
 	String color;
 	int memory;
 	
 	// 생성자
-	Phone() {}
-	
-	Phone(String name) {
-		this(name, "검은색", 200);
+	Phone() {
+		super();
 	}
 	
-	Phone(String name, String color) {
-		this(name, color, 200);
+	Phone(String company) {
+		this(company, "휴대폰", "검은색", 200);
 	}
 	
-	Phone(String name, String color, int memory) {// 필드를 초기화
+	Phone(String company, String name) {
+		this(company, name, "검은색", 200);
+	}
+	
+	Phone(String company, String name, String color) {
+		this(company, name, color, 200);
+	}
+	
+	Phone(String company, String name, String color, int memory) {// 필드를 초기화
+		this.company = company;
 		this.name = name;
 		this.color = color;
 		this.memory = memory;
@@ -41,8 +48,6 @@ public class Phone {
 		
 	}
 }
-
-
 
 
 
