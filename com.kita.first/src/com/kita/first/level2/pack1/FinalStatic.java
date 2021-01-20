@@ -11,10 +11,10 @@ public class FinalStatic {
 		n3 = n2;
 	}
 	
-	static void printNum(int input) {
+	void printNum(int input) {
 		System.out.println(input);
 //		System.out.println(n3);
-//		call();
+		call();
 	}
 	
 	void call() {

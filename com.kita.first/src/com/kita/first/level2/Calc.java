@@ -1,7 +1,5 @@
 package com.kita.first.level2;
 
-import java.util.Scanner;
-
 public class Calc {
 	// 필드
 //	static int n1 = 1;

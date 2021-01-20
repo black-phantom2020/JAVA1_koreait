@@ -20,8 +20,8 @@ public class Test {
 //		System.out.println(fs3.N2);
 		
 //		Singleton singleton = Singleton.getInstance();
-//		
-//		FinalStatic.printNum(1);
+		FinalStatic fs = new FinalStatic(1, 2);
+		fs.printNum(1);
 		
 //		Scanner sc = new Scanner(System.in);
 		
