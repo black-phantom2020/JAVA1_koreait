@@ -6,7 +6,8 @@ public class Student {
 	Book book3 = new Book(4);
 	
 	int readBooks() {
-		if(false == book1.read()) {
+		boolean result1 = book1.read();
+		if(false == result1) {
 			stopRead();
 			return 1;
 		}
