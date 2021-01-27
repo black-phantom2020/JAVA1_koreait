@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class Test {
 	public static void main(String[] args) {
-		ScanNum sn = new ScanNum();
-		String str = sn.inputNumString();
-		int result = Utils.parseStrToInt(str);
-		sn.printMsg(result);
+		
+//		ScanNum sn = new ScanNum();
+//		String str = sn.inputNumString();
+//		int result = Utils.parseStrToInt(str);
+//		sn.printMsg(result);
 		
 		
 		
