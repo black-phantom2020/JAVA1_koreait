@@ -12,11 +12,11 @@ public class TryCatch {
 		System.out.println(1 + 2 + "3");
 		
 		
-		Animal ani = new Animal();
+//		Animal ani = new Animal();
 		Cat cat = new Cat();
-		ani = cat;
+//		ani = cat;
 		try {
-			Dog dog = (Dog)ani;
+//			Dog dog = (Dog)ani;
 		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println("문제 발생");

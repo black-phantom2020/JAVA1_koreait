@@ -48,7 +48,7 @@ public class Test {
 		while(true) {
 			myNum = game.inputNum();
 			
-			if(myNum<1 || myNum>len) {
+			if(myNum<0 || myNum>len) {
 				System.out.println("범위 내의 숫자를 입력하세요.");
 				continue;
 			} else if(myNum == 0) {
