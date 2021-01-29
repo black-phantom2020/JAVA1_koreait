@@ -1,5 +1,6 @@
 package com.kita.first.level3.baseball;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyBall {
@@ -19,9 +20,33 @@ public class MyBall {
 		scan = new Scanner(System.in);
 	}
 	
-	setNumber() {}
+	// 숫자를 입력받는 기능
+	public void setNumbers() {
+		for(int i=0; i<myArr.length; i++) {
+			System.out.printf("%d번째 숫자: ", i+1);
+			String val = scan.next();
+			try {
+				myArr[i] = Integer.parseInt(val);
+			} catch(Exception e) {
+				i--;
+				System.out.println("1~9까지의 숫자값을 입력해주세요.");
+				continue;
+			}
+			
+			for(int z=0; z<i; z++) {
+				if(myArr[z]==myArr[i]) {
+					i--;
+					System.out.println("중복된 값이 존재합니다.");
+					break;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(myArr));
+	}
 	
-	getMyNum(int idx) {}
+	public int getMyNum(int idx) {
+		return myArr[idx];
+	}
 	
 }
 
