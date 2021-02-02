@@ -3,9 +3,16 @@ package com.kita.first.level4;
 public class Test {
 	public static void main(String[] args) {
 		Parent p = new Parent() {
+			String childField = "자식 필드";
+			
+			void childMethod() {
+				System.out.println("자식 메소드입니다.");
+			}
+			
 			@Override
 			void parentMethod() {
-				System.out.println("자식 객체입니다.");
+				childMethod();
+				System.out.println(childField+"자식 객체입니다.");
 			};
 		};
 		p.parentMethod();
