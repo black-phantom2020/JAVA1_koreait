@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ThrowsException {
 	Scanner scan = new Scanner(System.in);
 	
-	void parseInputStrToInt() throws Exception {
+	void parseInputStrToInt() throws NumberFormatException, Exception {
 		System.out.print("숫자를 입력해주세요: ");
 		String str = scan.next();
 		int num;
